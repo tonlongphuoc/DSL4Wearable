@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="iotwearable.editor.MainboardEditor"
+            contributorClass="iotwearable.editor.MainboardEditorActionBarContributor"
+            default="true"
+            id="iotwearable.gef.editorIO"
+            name="IoTWMainboard">
+      </editor>
+      <editor
+            class="iotwearable.editor.StateSchemaEditor"
+            contributorClass="iotwearable.editor.StateSchemaEditorActionBarContributor"
+            default="true"
+            id="iotwearable.gef.editorState"
+            name="IoTWStateMachine">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.actionSets">
+    <actionSet
+            id="iotwearable.gef.actionSet"
+            label="IoTW"
+            visible="true">
+         <menu
+               id="iotwMenu"
+               label="IoTW">
+            <separator
+                  name="iotwGroup">
+            </separator>
+         </menu>
+         <action
+               class="iotwearable.editor.action.CodeGeneratorAction"
+               icon="src/iotwearable/editor/icons/gen.png"
+               id="iotwearable.gef.GenerateCodeAction"
+               label="Generate code"
+               menubarPath="iotwMenu/iotwGroup"
+               toolbarPath="iotwGroup"
+               tooltip="Generate code">
+         </action>
+      </actionSet>
+   </extension>
+</plugin>

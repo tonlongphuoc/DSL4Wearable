@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iotw:StateSchema xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:iotw="com.iuh.wearable/model/iotw">
+  <controls xsi:type="iotw:StateFrame" name="Ready" constraints="52,96,118,61" incomings="//@connnections.0 //@connnections.3" outgoings="//@connnections.1 //@connnections.2" content="Display ledGreen&#xD;&#xA;Show &quot;Welcome&quot;"/>
+  <controls xsi:type="iotw:EndPoint" constraints="102,201,30,30" incomings="//@connnections.1"/>
+  <controls xsi:type="iotw:StartPoint" constraints="46,38,30,30" outgoings="//@connnections.0"/>
+  <controls xsi:type="iotw:StateFrame" name="Ordered" constraints="391,85,105,72" incomings="//@connnections.2" outgoings="//@connnections.3 //@connnections.4" content="Display ledWhite&#xD;&#xA;Create an order"/>
+  <controls xsi:type="iotw:StateFrame" name="Confirming" constraints="381,260,111,57" incomings="//@connnections.4" content="Confirm"/>
+  <connnections source="//@controls.2" target="//@controls.0"/>
+  <connnections source="//@controls.0" target="//@controls.1"/>
+  <connnections source="//@controls.0" target="//@controls.3" label="{&quot;Order&quot; button pressed}"/>
+  <connnections source="//@controls.3" target="//@controls.0" label="{&quot;Cancel&quot; button pressed}">
+    <bendpoints>376,221</bendpoints>
+    <bendpoints>182,222</bendpoints>
+  </connnections>
+  <connnections source="//@controls.3" target="//@controls.4" label="{Order taken}"/>
+</iotw:StateSchema>

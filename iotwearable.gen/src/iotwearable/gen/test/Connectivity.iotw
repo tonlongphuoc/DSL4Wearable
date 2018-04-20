@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iotw:ArduinoUNOR3 xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:iotw="com.iuh.wearable/model/iotw" name="Arduino UNO R3" pin0="0,IO,0&lt;->TX" pin1="1,IO,1&lt;->RX" pin2="2,IO" pin3="3,IO" pin4="4,IO" pin5="5,IO" pin6="6,IO" pin7="7,IO" pin8="8,IO" pin9="9,IO" pin10="10,IO" pin11="11,IO" pin12="12,IO,12&lt;->TXD" pin13="13,IO,13&lt;->RXD" pinA4="A4,Input" pinA5="A5,Input">
+  <connectivities xsi:type="iotw:WifiESP8266" name="Wifi ESP8266" id="wifi" constraints="137,51,50,50" pinTX="TX,IO,0&lt;->TX" pinRX="RX,IO,1&lt;->RX"/>
+  <connectivities xsi:type="iotw:BluetoothHC06" name="Bluetooth HC06" id="bluetooth" constraints="19,49,50,50" pinTXD="TXD,IO,12&lt;->TXD" pinRXD="RXD,IO,13&lt;->RXD"/>
+</iotw:ArduinoUNOR3>

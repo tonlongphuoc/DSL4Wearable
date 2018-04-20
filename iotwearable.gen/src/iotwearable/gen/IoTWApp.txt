@@ -1,0 +1,38 @@
+/*
+Source code for <project>
+*/
+
+<include>
+
+/*
+Each state in the application corresponds to one the integer.
+Numbered starting at 0
+stateCurrent is a variable that stores the current state of the application.
+<desState>
+*/
+int currentState = 0;
+
+/*--------------------Define--------------------*/
+<define>
+/*--------------------END Define--------------------*/
+
+/*--------------------Prototype--------------------*/
+<funcPrototype>
+/*--------------------END Prototype--------------------*/
+
+void setup()
+{
+	<funcSetup>
+}
+
+void loop()
+{
+	<funcLoop>
+}
+
+/*--------------------Implement--------------------*/
+<funcImpl>
+
+//Set state
+<funcSetState>
+/*--------------------END Implement--------------------*/

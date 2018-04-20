@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iotw:ArduinoUNOR3 xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:iotw="com.iuh.wearable/model/iotw" name="Arduino UNO R3" pin2="2,IO,2&lt;->1" pin3="3,IO,3&lt;->2" pin4="4,IO,4&lt;->3" pin5="5,IO,5&lt;->4" pin6="6,IO,6&lt;->5" pin7="7,IO,7&lt;->6" pin8="8,IO,8&lt;->7" pin9="9,IO,9&lt;->8" pin10="10,IO,10&lt;->1" pin11="11,IO,11&lt;->1" pin12="12,IO,12&lt;->1" pin13="13,IO,13&lt;->1" pinA4="A4,Input,A4&lt;->SDA" pinA5="A5,Input,A5&lt;->SCL">
+  <controls xsi:type="iotw:Keypad4x4" name="Keypad 4x4" id="keypad" constraints="43,32,100,100" pin1="1,IO,2&lt;->1" pin2="2,IO,3&lt;->2" pin3="3,IO,4&lt;->3" pin4="4,IO,5&lt;->4" pin5="5,IO,6&lt;->5" pin6="6,IO,7&lt;->6" pin7="7,IO,8&lt;->7" pin8="8,IO,9&lt;->8" nameButton1="Order" nameButton2="Cancel"/>
+  <controls xsi:type="iotw:LED" name="LED" id="ledGreen" constraints="174,56,50,50" pin1="1,Passive,10&lt;->1"/>
+  <controls xsi:type="iotw:LED" name="LED" id="ledWhite" constraints="234,56,50,50" pin1="1,Passive,11&lt;->1"/>
+  <controls xsi:type="iotw:Buzzer" name="Buzzer" id="buzzer" constraints="302,37,80,80" pin1="1,Passive,12&lt;->1"/>
+  <controls xsi:type="iotw:I2CLCD2004" name="I2C LCD 2004" id="lcd" constraints="414,34,197,98" pinSDA="SDA,IO,A4&lt;->SDA" pinSCL="SCL,IO,A5&lt;->SCL"/>
+  <controls xsi:type="iotw:Button" name="Button" id="button" constraints="647,42,50,50" pin1="1,IO,13&lt;->1"/>
+</iotw:ArduinoUNOR3>
